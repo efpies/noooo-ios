@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  noooo
-//
-//  Created by Nicholas Yasnov on 06.06.14.
-//  Copyright (c) 2014 efpies. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

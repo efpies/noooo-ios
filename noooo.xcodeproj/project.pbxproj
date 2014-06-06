@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE46CFA019410A09008EE59B /* noooo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE46CF9F19410A09008EE59B /* noooo.mp3 */; };
 		CE91030E1941048D00AA88FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91030D1941048D00AA88FD /* AppDelegate.swift */; };
 		CE9103101941048D00AA88FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91030F1941048D00AA88FD /* ViewController.swift */; };
 		CE9103131941048D00AA88FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9103111941048D00AA88FD /* Main.storyboard */; };
 		CE9103151941048D00AA88FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9103141941048D00AA88FD /* Images.xcassets */; };
-		CE9103211941048D00AA88FD /* nooooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9103201941048D00AA88FD /* nooooTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE46CF9F19410A09008EE59B /* noooo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = noooo.mp3; sourceTree = "<group>"; };
 		CE9103081941048D00AA88FD /* noooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91030C1941048D00AA88FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE91030D1941048D00AA88FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +33,6 @@
 		CE9103121941048D00AA88FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9103141941048D00AA88FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE91031A1941048D00AA88FD /* nooooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nooooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE91031F1941048D00AA88FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9103201941048D00AA88FD /* nooooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nooooTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE46CF9E19410A09008EE59B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE46CF9F19410A09008EE59B /* noooo.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CE9102FF1941048D00AA88FD = {
 			isa = PBXGroup;
 			children = (
 				CE91030A1941048D00AA88FD /* noooo */,
-				CE91031D1941048D00AA88FD /* nooooTests */,
 				CE9103091941048D00AA88FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +85,7 @@
 				CE91030F1941048D00AA88FD /* ViewController.swift */,
 				CE9103111941048D00AA88FD /* Main.storyboard */,
 				CE9103141941048D00AA88FD /* Images.xcassets */,
+				CE46CF9E19410A09008EE59B /* Resources */,
 				CE91030B1941048D00AA88FD /* Supporting Files */,
 			);
 			path = noooo;
@@ -88,23 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				CE91030C1941048D00AA88FD /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE91031D1941048D00AA88FD /* nooooTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE9103201941048D00AA88FD /* nooooTests.swift */,
-				CE91031E1941048D00AA88FD /* Supporting Files */,
-			);
-			path = nooooTests;
-			sourceTree = "<group>";
-		};
-		CE91031E1941048D00AA88FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE91031F1941048D00AA88FD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,6 +181,7 @@
 			files = (
 				CE9103131941048D00AA88FD /* Main.storyboard in Resources */,
 				CE9103151941048D00AA88FD /* Images.xcassets in Resources */,
+				CE46CFA019410A09008EE59B /* noooo.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9103211941048D00AA88FD /* nooooTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +387,7 @@
 				CE9103261941048D00AA88FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9103271941048D00AA88FD /* Build configuration list for PBXNativeTarget "nooooTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +396,7 @@
 				CE9103291941048D00AA88FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

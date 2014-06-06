@@ -1,0 +1,15 @@
+# xcode noise
+DerivedData
+xcuserdata
+project.xcworkspace
+build/*
+
+# osx noise
+.DS_Store
+
+# appcode
+.idea/*
+!.idea/codeStyleSettings.xml
+
+#localization xibs
+**/ru.lproj/xibstrings/*.strings_patch

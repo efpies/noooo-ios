@@ -1,25 +1,30 @@
-//
-//  ViewController.swift
-//  noooo
-//
-//  Created by Nicholas Yasnov on 06.06.14.
-//  Copyright (c) 2014 efpies. All rights reserved.
-//
-
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
-                            
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+    @IBOutlet var nooooButton : UIButton;
+    
+    var player : AVAudioPlayer = AVAudioPlayer(contentsOfURL: NSBundle.mainBundle().URLForResource("noooo", withExtension: "mp3", subdirectory: ""), error: nil);
+
+    init(coder aDecoder: NSCoder!)  {
+        super.init(coder: aDecoder);
+        
+        player.delegate = self;
+        player.prepareToPlay();
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction
+    func playNooo() {
+        player.play();
+        showButtonState(true);
     }
-
-
+    
+    func showButtonState(selected : Bool) {
+        nooooButton.selected = selected;
+        nooooButton.userInteractionEnabled = !selected;
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        showButtonState(false);
+    }
 }
-
